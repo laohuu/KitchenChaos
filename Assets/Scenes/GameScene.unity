@@ -342,6 +342,102 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91f8d8c58f822c4795e2325d740a17a, type: 3}
+--- !u!1001 &286099739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2261276733785340008, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261276733785340008, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e5422ed253aa7fe4fa40a66eba35568b,
+        type: 2}
+    - target: {fileID: 2261276733785340008, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: de21829a998aa574b983e0e663ff214b,
+        type: 2}
+    - target: {fileID: 2261276733785340008, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 74cf359e9c30be3498701c625037375f,
+        type: 2}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027913, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062561566343027915, guid: e9fd00d3168740e489ebfcb7ad0b3b8a,
+        type: 3}
+      propertyPath: m_Name
+      value: CuttingCounter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9fd00d3168740e489ebfcb7ad0b3b8a, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

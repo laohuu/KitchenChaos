@@ -9,6 +9,8 @@ public class GameInput : MonoBehaviour
     public static GameInput Instance { get; private set; }
 
     public event EventHandler OnInteractAction;
+    public event EventHandler OnInteractAlternateAction;
+
     private PlayerInputActions playerInputActions;
 
     private void Awake()
@@ -18,11 +20,13 @@ public class GameInput : MonoBehaviour
         playerInputActions.Player.Enable();
 
         playerInputActions.Player.Interact.performed += Interact_Performed;
+        playerInputActions.Player.InteractAlternate.performed += InteractAlternate_Performed;
     }
 
     private void OnDestroy()
     {
         playerInputActions.Player.Interact.performed -= Interact_Performed;
+        playerInputActions.Player.InteractAlternate.performed -= InteractAlternate_Performed;
 
         playerInputActions.Dispose();
     }
@@ -30,6 +34,11 @@ public class GameInput : MonoBehaviour
     private void Interact_Performed(InputAction.CallbackContext obj)
     {
         OnInteractAction?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void InteractAlternate_Performed(InputAction.CallbackContext obj)
+    {
+        OnInteractAlternateAction?.Invoke(this, EventArgs.Empty);
     }
 
     public Vector2 GetMovementVectorNormalizaed()
