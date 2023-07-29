@@ -107,7 +107,7 @@ public class StoveCounter : BaseCounter, IHasProgress
                 OnStateChanged?.Invoke(this, new OnStateChangedEventArgs { state = state });
                 OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
                 {
-                    progressNormalized = burningTimer / burningRecipeSO.burningTimerMax
+                    progressNormalized = 0f
                 });
             }
             else
