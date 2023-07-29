@@ -45,7 +45,6 @@ public class GameInput : MonoBehaviour
     {
         Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
 
-
         if (Input.GetKey(KeyCode.W))
         {
             inputVector.y = 1;
