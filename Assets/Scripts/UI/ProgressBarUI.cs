@@ -9,21 +9,21 @@ public class ProgressBarUI : MonoBehaviour
     [SerializeField] private GameObject hasProgressGameObject;
     [SerializeField] private Image barImage;
 
-    private CuttingCounter _cuttingCounter;
+    private IHasProgress iHasProgress;
 
     private void Start()
     {
-        _cuttingCounter = hasProgressGameObject.GetComponent<CuttingCounter>();
-        _cuttingCounter.OnProgressChanged += CuttingCounterOnOnProgressChanged;
+        iHasProgress = hasProgressGameObject.GetComponent<IHasProgress>();
+        iHasProgress.OnProgressChanged += CuttingCounterOnOnProgressChanged;
         barImage.fillAmount = 0f;
         Hide();
     }
 
-    private void CuttingCounterOnOnProgressChanged(object sender, CuttingCounter.OnProgressChangedEventArgs e)
+    private void CuttingCounterOnOnProgressChanged(object sender, IHasProgress.OnProgressChangedEventArgs e)
     {
         barImage.fillAmount = e.progressNormalized;
 
-        if (e.progressNormalized <= 0f || e.progressNormalized >= 1f)
+        if (e.progressNormalized is <= 0f or >= 1f)
         {
             Hide();
         }
