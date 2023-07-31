@@ -22,12 +22,15 @@ public class GameInput : MonoBehaviour
 
         playerInputActions.Player.Interact.performed += Interact_Performed;
         playerInputActions.Player.InteractAlternate.performed += InteractAlternate_Performed;
+        playerInputActions.Player.Pause.performed += Pause_performed;
     }
+
 
     private void OnDestroy()
     {
         playerInputActions.Player.Interact.performed -= Interact_Performed;
         playerInputActions.Player.InteractAlternate.performed -= InteractAlternate_Performed;
+        playerInputActions.Player.Pause.performed -= Pause_performed;
 
         playerInputActions.Dispose();
     }
@@ -41,6 +44,12 @@ public class GameInput : MonoBehaviour
     {
         OnInteractAlternateAction?.Invoke(this, EventArgs.Empty);
     }
+
+    private void Pause_performed(InputAction.CallbackContext obj)
+    {
+        OnPauseAction?.Invoke(this, EventArgs.Empty);
+    }
+
 
     public Vector2 GetMovementVectorNormalizaed()
     {

@@ -82,8 +82,6 @@ public class KitchenGameManager : MonoBehaviour
             case State.GameOver:
                 break;
         }
-
-        Debug.Log(state);
     }
 
     public bool IsGamePlaying()
@@ -117,13 +115,11 @@ public class KitchenGameManager : MonoBehaviour
         if (isGamePaused)
         {
             Time.timeScale = 0f;
-
             OnGamePaused?.Invoke(this, EventArgs.Empty);
         }
         else
         {
             Time.timeScale = 1f;
-
             OnGameUnpaused?.Invoke(this, EventArgs.Empty);
         }
     }
