@@ -5,16 +5,16 @@ This game based on free course from Codemonkey https://unitycodemonkey.com/kitch
 
 ### Cut
 
-![Cut.gif](./README.assets/Cut-1690804253429-13.gif)
+![Cut.gif](https://github.com/laohuu/KitchenChaos/blob/main/Images/Cut.gif?raw=true)
 
 ### Stove
 
-![Stove.gif](./README.assets/Stove.gif)
+![CStove.gif](https://github.com/laohuu/KitchenChaos/blob/main/Images/CStove.gif?raw=true)
 
 ### Delivery
 
-![Delivery.gif](./README.assets/Delivery.gif)
+![Delivery.gif](https://github.com/laohuu/KitchenChaos/blob/main/Images/Delivery.gif?raw=true)
 
 ### KeyRebinding
 
-![KeyRebinding.gif](./README.assets/KeyRebinding.gif)
+![KeyRebinding.gif](https://github.com/laohuu/KitchenChaos/blob/main/Images/KeyRebinding.gif?raw=true)
