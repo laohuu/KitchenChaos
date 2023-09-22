@@ -1,4 +1,7 @@
 # KitchenChaos
+
+Unity version: 2022.2.1f1
+
 This game based on free course from Codemonkey https://unitycodemonkey.com/kitchenchaoscourse.php.
 
 ## DEMO GIF:
