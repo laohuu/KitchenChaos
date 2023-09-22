@@ -28,6 +28,11 @@ public class DeliveryManager : MonoBehaviour
 
     private void Update()
     {
+        if (!KitchenGameManager.Instance.IsGamePlaying())
+        {
+            return;
+        }
+
         spawnRecipeTimer -= Time.deltaTime;
         if (spawnRecipeTimer <= 0f)
         {
